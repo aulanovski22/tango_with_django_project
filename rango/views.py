@@ -12,3 +12,7 @@ def index(request):
 def about(request):
     
     return HttpResponse("It works!")
+
+def about(request):
+    context_dict = {'boldmessage': 'The cat was here!'}
+    return render(request, 'cat/about.html', context=context_dict)
