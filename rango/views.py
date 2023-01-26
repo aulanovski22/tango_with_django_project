@@ -15,4 +15,4 @@ def about(request):
 
 def about(request):
     context_dict = {'boldmessage': 'The cat was here!'}
-    return render(request, 'cat/about.html', context=context_dict)
+    return render(request, 'rango/about.html', context=context_dict)
